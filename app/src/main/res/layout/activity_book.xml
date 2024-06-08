@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:background="@drawable/wdtnlkz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/relativeBook">
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageBook"
+                android:layout_marginTop="1dp"
+                android:text="Название и автор книги"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_onPrimaryFixed" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Описание"
+                android:textSize="20dp"
+                android:textColor="@color/md_theme_onPrimaryFixed" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="20dp"
+                android:id="@+id/irrow"
+                android:background="@null"
+                android:layout_below="@+id/card_layout" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_text"
+                    android:textSize="20dp" />
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/imageBook"
+                android:layout_width="300dp"
+                android:layout_height="390dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp"
+                android:layout_centerInParent="true" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_name"
+                android:id="@+id/star"
+                android:layout_centerInParent="true"
+                android:numStars="5"
+                android:progressTint="#6D77FC" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:id="@+id/card_layout"
+                android:layout_below="@+id/star"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/like_for_fav_book"
+                        android:id="@+id/likeButton"
+                        android:background="@null" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Нравится"
+                        android:textSize="19dp"
+                        android:textColor="@color/md_theme_onPrimaryFixed"
+                        android:layout_marginLeft="5dp" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/book_ne_read"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/reabButton" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Прочитано"
+                        android:textSize="19dp"
+                        android:textColor="@color/md_theme_onPrimaryFixed"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

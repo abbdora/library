@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Library">
+        <item>Волшебник Изумрудного города, А. Волков</item>
+        <item>Герой нашего времени, М. Лермонтов</item>
+        <item>Гордость и предубеждение, Д. Остин</item>
+        <item>Горе от ума, А. Грибоедов</item>
+        <item>Джейн Эйр, Ш. Бронте</item>
+        <item>Евгений Онегин, А. Пушкин</item>
+        <item>Отцы и дети, И. Тургенев</item>
+    </string-array>
+    <string-array name="Genre">
+        <item>Сказка</item>
+        <item>Психологический роман</item>
+        <item>Роман</item>
+        <item>Комедия</item>
+        <item>Роман</item>
+        <item>Роман в стихах</item>
+        <item>Роман</item>
+    </string-array>
+    <string-array name="LibraryCh">
+        <item>Волшебник Изумрудного города, А. Волков</item>
+        <item>Горе от ума, А. Грибоедов</item>
+        <item>Джейн Эйр, Ш. Бронте</item>
+        <item>Евгений Онегин, А. Пушкин</item>
+        <item>Отцы и дети, И. Тургенев</item>
+    </string-array>
+    <string-array name="GenreCh">
+        <item>Сказка</item>
+        <item>Комедия</item>
+        <item>Роман</item>
+        <item>Роман в стихах</item>
+        <item>Роман</item>
+    </string-array>
+</resources>

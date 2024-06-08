@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@drawable/profiles_frag">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailText"
+        android:id="@+id/linear">
+        <Button
+            android:id="@+id/but_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зайти"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:backgroundTint="@color/md_theme_surface_mediumContrast"/>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выйти"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:backgroundTint="@color/md_theme_surface_mediumContrast"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Детский режим"
+        android:textSize="18dp"
+        android:textColor="@color/md_theme_onPrimaryFixed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваша почта:"
+        android:layout_marginTop="100dp"
+        android:id="@+id/emailText"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/md_theme_onPrimaryFixed"/>
+
+</RelativeLayout>
